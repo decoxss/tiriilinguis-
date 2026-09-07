@@ -1,0 +1,415 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRISTIAN</title>
+
+    <!-- CSS GENERAL DEL PROYECTO -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /*
+        =====================================================
+        CRISTIAN: AQUÍ PUEDES HACER TUS AJUSTES
+        =====================================================
+
+        Puedes cambiar:
+        - La posición de los elementos.
+        - Tamaños.
+        - Espacios.
+        - Colores.
+        - Diseño de tus tarjetas.
+        */
+
+
+        /* FOTO SUPERIOR DE CRISTIAN */
+
+        header {
+
+            /*
+            AQUÍ PON EL NOMBRE DE TU FOTO.
+
+            Ejemplo:
+
+            background-image: url('img/cristian.jpg');
+
+            La foto debe estar dentro de la carpeta "img".
+            */
+
+            background-image: url('img/cristian.jpg');
+
+            background-size: cover;
+            background-position: center;
+
+            height: 260px;
+
+            border-radius: 10px;
+
+        }
+
+
+        /* CONTENEDOR PRINCIPAL */
+
+        .contenedor {
+
+            max-width: 1100px;
+
+            margin: 0 auto;
+
+            padding: 50px 20px;
+
+            text-align: center;
+
+        }
+
+
+        /* TITULO */
+
+        .contenedor h1 {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        /* INFORMACION */
+
+        .introduccion {
+
+            max-width: 800px;
+
+            margin: 0 auto 40px auto;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* TARJETAS */
+
+        .tarjetas {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: stretch;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .tarjeta {
+
+            width: 300px;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+
+        }
+
+
+        /* EFECTO AL PASAR EL CURSOR */
+
+        .tarjeta:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+        }
+
+
+        .tarjeta h2 {
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .tarjeta p {
+
+            line-height: 1.7;
+
+        }
+
+
+        /*
+        =====================================================
+        AQUÍ PUEDES AGREGAR MÁS ESTILOS SI QUIERES
+        =====================================================
+        */
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         FOTO SUPERIOR DE CRISTIAN
+         ================================================= -->
+
+    <header></header>
+
+
+    <!-- =================================================
+         BARRA DE NAVEGACIÓN
+         NO ES NECESARIO MODIFICARLA
+         ================================================= -->
+
+    <nav class="navigation">
+
+
+        <!-- HOME -->
+
+        <a href="index.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path d="M3 10.5L12 3l9 7.5"></path>
+
+                    <path d="M5 9.5V21h14V9.5"></path>
+
+                    <path d="M9 21v-7h6v7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Home</span>
+
+        </a>
+
+
+        <!-- CRISTIAN -->
+
+        <a href="cristian.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+
+                    <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Cristian</span>
+
+        </a>
+
+
+        <!-- ANGEL -->
+
+        <a href="angel.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+
+                    <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Angel</span>
+
+        </a>
+
+
+        <!-- KAROL -->
+
+        <a href="karol.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+
+                    <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Karol</span>
+
+        </a>
+
+
+        <!-- JHONATAN -->
+
+        <a href="jhonatan.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+
+                    <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Jhonatan</span>
+
+        </a>
+
+
+    </nav>
+
+
+    <!-- =================================================
+         INFORMACIÓN DE CRISTIAN
+         
+         CRISTIAN:
+         AQUÍ ESCRIBE TU INFORMACIÓN PERSONAL.
+         
+         Puedes cambiar completamente el contenido,
+         agregar más tarjetas o eliminar las que no quieras.
+         ================================================= -->
+
+
+    <main class="contenedor">
+
+
+        <!--
+        =================================================
+        AQUÍ ESCRIBE TU INFORMACIÓN
+        =================================================
+        -->
+
+        <h1>Sobre mí</h1>
+
+
+        <p class="introduccion">
+
+            <!--
+            CRISTIAN:
+            AQUÍ ESCRIBE UNA PEQUEÑA INTRODUCCIÓN SOBRE TI.
+
+            Por ejemplo:
+            Tu nombre, edad, carrera y una breve descripción.
+            -->
+
+            Hola, soy Cristian.
+
+            En este apartado puedes conocer un poco más
+            sobre mí, mis estudios, mis intereses y mis metas.
+
+        </p>
+
+
+        <!-- =================================================
+             TARJETAS DE INFORMACIÓN
+             ================================================= -->
+
+        <div class="tarjetas">
+
+
+            <!-- ESTUDIOS -->
+
+            <div class="tarjeta">
+
+                <h2>🎓 Estudios</h2>
+
+                <p>
+
+                    <!--
+                    CRISTIAN:
+                    AQUÍ PON TU INFORMACIÓN SOBRE TUS ESTUDIOS.
+                    -->
+
+                    Escribe aquí información sobre tus estudios,
+                    carrera, semestre, escuela, cursos, etc.
+
+                </p>
+
+            </div>
+
+
+            <!-- INTERESES -->
+
+            <div class="tarjeta">
+
+                <h2>🎮 Intereses</h2>
+
+                <p>
+
+                    <!--
+                    CRISTIAN:
+                    AQUÍ PON TUS INTERESES Y PASATIEMPOS.
+
+                    Por ejemplo:
+                    videojuegos, música, deportes, películas,
+                    tecnología, etc.
+                    -->
+
+                    Escribe aquí tus intereses,
+                    pasatiempos y actividades favoritas.
+
+                </p>
+
+            </div>
+
+
+            <!-- METAS -->
+
+            <div class="tarjeta">
+
+                <h2>🚀 Metas</h2>
+
+                <p>
+
+                    <!--
+                    CRISTIAN:
+                    AQUÍ PON TUS METAS PERSONALES Y PROFESIONALES.
+                    -->
+
+                    Escribe aquí tus metas para el futuro,
+                    tanto personales como profesionales.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
+```

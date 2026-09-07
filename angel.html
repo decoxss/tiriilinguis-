@@ -1,72 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+  <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANGELUS </title>
+    <title>ANGELUS</title>
+
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
         header {
-            background-image: url('https://i.pinimg.com/736x/87/12/6a/87126ae7e6c4af9aa95312bb1af4f03a.jpg'); /* tu imagen de fondo */
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 90px 0;
-      text-align: center;
-      text-shadow: 1px 1px 3px rgb(255, 253, 253); 
-    }
-         nav {
-      background-color: rgba(134, 9, 19, 0.932); 
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 10px 0;
-    }
+            background-image: url('https://i.pinimg.com/736x/87/12/6a/87126ae7e6c4af9aa95312bb1af4f03a.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 90px 0;
+            text-align: center;
+            text-shadow: 1px 1px 3px black;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        article {
+            padding: 30px;
+        }
 
-    nav a:hover {
-      border-bottom: 2px solid white;
-    }
-
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Angelus</h1>
-  </header>
-  <nav>
-    <a href="index.html">INICIO</a>
-    <a href="angel.html">ANGEL</a>
-    <a href="cristian.html">CRISTIAN</a>
-    <a href="karol.html">KAROL</a>
-  </nav>
-   <article>
-      <h3>Información personal</h3>
-      <details>
-        <summary>Ver más</summary>
-        <p><b>Nombre:</b> Altamirano Hernández José Angel</p>
-        <p><b>Estado Civil:</b> Soltero</p>
-        <p><b>Hobbies:</b> Música y Videojuegos de carreras y shooter</p>
-        <p><b>Nacido en Tuxtla Gtz. Chiapas el 23 de Febrero del 2006</b></p>
-        <p>Estudiante de la <b>Licenciatura en Sistemas Computacionales en la <h4>Benemerita Universidad Autonóma de Chiapas</b></h4></p>
-      </details>
-      </article>
+        footer {
+            background-color: #860913;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
-<footer>
-    <p>Alumno: José Ángel Altamirano Hernández<br>
-    Carrera: Licenciatura en Sistemas Computacionales<br>
-    Fecha: 05 de Septiembre de 2026</p>
-  </footer>
-
 <body>
-    
+
+    <header>
+        <h1>Angelus</h1>
+    </header>
+
+    <!-- ESTA MISMA BARRA SE PONE EN TODAS LAS PÁGINAS -->
+<nav class="navigation">
+
+    <!-- HOME -->
+    <a href="index.html" class="nav-item">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 10.5L12 3l9 7.5"></path>
+                <path d="M5 9.5V21h14V9.5"></path>
+                <path d="M9 21v-7h6v7"></path>
+            </svg>
+        </div>
+        <span>Home</span>
+    </a>
+
+    <!-- CRISTIAN -->
+    <a href="cristian.html" class="nav-item">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3"></circle>
+                <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+            </svg>
+        </div>
+        <span>Cristian</span>
+    </a>
+
+    <!-- ANGEL -->
+    <a href="angel.html" class="nav-item">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3"></circle>
+                <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+            </svg>
+        </div>
+        <span>Angel</span>
+    </a>
+
+    <!-- KAROL -->
+    <a href="karol.html" class="nav-item">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3"></circle>
+                <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+            </svg>
+        </div>
+        <span>Karol</span>
+    </a>
+
+    <!-- JHONATAN -->
+    <a href="jhonatan.html" class="nav-item">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3"></circle>
+                <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+            </svg>
+        </div>
+        <span>Jhonatan</span>
+    </a>
+
+</nav>
+
+    <article>
+        <h3>Información personal</h3>
+
+        <details>
+            <summary>Ver más</summary>
+
+            <p><b>Nombre:</b> Altamirano Hernández José Angel</p>
+
+            <p><b>Estado Civil:</b> Soltero</p>
+
+            <p><b>Hobbies:</b> Música y Videojuegos de carreras y shooter</p>
+
+            <p><b>Nacido en Tuxtla Gtz. Chiapas el 23 de Febrero del 2006</b></p>
+
+            <p>
+                Estudiante de la
+                <b>Licenciatura en Sistemas Computacionales</b>
+                en la
+                <b>Benemérita Universidad Autónoma de Chiapas</b>
+            </p>
+
+        </details>
+    </article>
+
+    <footer>
+        <p>
+            Alumno: José Ángel Altamirano Hernández<br>
+            Carrera: Licenciatura en Sistemas Computacionales<br>
+            Fecha: 05 de Septiembre de 2026
+        </p>
+    </footer>
+
 </body>
 </html>
+```

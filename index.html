@@ -1,18 +1,409 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>HOME</title>
+
+    <!-- CSS de todo el proyecto -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* FOTO SUPERIOR */
+
+        header {
+            background-image: url('img/home.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 260px;
+            border-radius: 10px;
+        }
+
+
+        /* CONTENEDOR PRINCIPAL */
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+
+        /* TITULO */
+
+        .contenedor h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+
+        /* INTRODUCCION */
+
+        .introduccion {
+            max-width: 800px;
+            margin: 0 auto 35px auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+
+        /* FOTO DEL EQUIPO */
+
+        .foto-equipo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 35px auto 50px auto;
+        }
+
+
+        .foto-equipo img {
+            width: 450px;
+            max-width: 90%;
+            border-radius: 20px;
+
+            /* SOMBRA */
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+            /* ANIMACION */
+
+            transition: transform 0.5s ease,
+                        box-shadow 0.5s ease,
+                        filter 0.5s ease;
+
+            cursor: pointer;
+        }
+
+
+        /* EFECTO AL PASAR EL CURSOR */
+
+        .foto-equipo img:hover {
+
+            transform: scale(1.05) translateY(-8px);
+
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+
+            filter: brightness(1.08);
+
+        }
+
+
+        /* CONTENEDOR DE TARJETAS */
+
+        .tarjetas {
+
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 25px;
+            flex-wrap: wrap;
+
+        }
+
+
+        /* TARJETAS */
+
+        .tarjeta {
+
+            width: 300px;
+            padding: 30px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+
+        }
+
+
+        /* EFECTO DE LAS TARJETAS */
+
+        .tarjeta:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+        }
+
+
+        .tarjeta h2 {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .tarjeta p {
+
+            line-height: 1.7;
+
+        }
+
+
+        /* TEXTO FINAL */
+
+        .mensaje {
+
+            margin-top: 45px;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+
+        /* ADAPTACION PARA CELULAR */
+
+        @media (max-width: 600px) {
+
+            .contenedor h1 {
+                font-size: 30px;
+            }
+
+            .foto-equipo img {
+                width: 100%;
+            }
+
+            .tarjeta {
+                width: 90%;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="cristian.html">cristian</a></li>
-            <li><a href="angel.html">angel</a></li>
-            <li><a href="karol.html">karol</a></li>
-        </ul>
+
+
+    <!-- IMAGEN SUPERIOR -->
+
+    <header></header>
+
+
+    <!-- BARRA DE NAVEGACION -->
+
+    <nav class="navigation">
+
+
+        <!-- HOME -->
+
+        <a href="index.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path d="M3 10.5L12 3l9 7.5"></path>
+                    <path d="M5 9.5V21h14V9.5"></path>
+                    <path d="M9 21v-7h6v7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Home</span>
+
+        </a>
+
+
+        <!-- CRISTIAN -->
+
+        <a href="cristian.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+                    <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Cristian</span>
+
+        </a>
+
+
+        <!-- ANGEL -->
+
+        <a href="angel.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+                    <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Angel</span>
+
+        </a>
+
+
+        <!-- KAROL -->
+
+        <a href="karol.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+                    <path d="M5 21c0-4 3-7 7-7s7 7 7 7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Karol</span>
+
+        </a>
+
+
+        <!-- JHONATAN -->
+
+        <a href="jhonatan.html" class="nav-item">
+
+            <div class="icon">
+
+                <svg viewBox="0 0 24 24">
+
+                    <circle cx="12" cy="7" r="3"></circle>
+                    <path d="M5 21c0-4 3-7 7-7s7 3 7 7"></path>
+
+                </svg>
+
+            </div>
+
+            <span>Jhonatan</span>
+
+        </a>
+
+
     </nav>
+
+
+    <!-- CONTENIDO DE HOME -->
+
+    <main class="contenedor">
+
+
+        <h1>Bienvenidos a nuestro sitio web</h1>
+
+
+        <p class="introduccion">
+
+            Somos un equipo de cuatro estudiantes de la
+            <b>Licenciatura en Sistemas Computacionales</b>.
+            En este sitio web queremos compartir información
+            sobre nosotros, nuestros intereses, conocimientos
+            y algunos aspectos de nuestra formación universitaria.
+
+        </p>
+
+
+        <!-- FOTO DE LOS CUATRO -->
+
+        <div class="foto-equipo">
+
+            <img src="img/los4.jpeg" alt="Foto de los cuatro integrantes del equipo">
+
+        </div>
+
+
+        <!-- TARJETAS -->
+
+        <div class="tarjetas">
+
+
+            <!-- SOBRE NOSOTROS -->
+
+            <div class="tarjeta">
+
+                <h2>Sobre nosotros</h2>
+
+                <p>
+
+                    En las diferentes secciones podrás conocer
+                    un poco más sobre cada uno de los integrantes
+                    del equipo, nuestros estudios, intereses,
+                    habilidades y metas personales.
+
+                </p>
+
+            </div>
+
+
+            <!-- SOBRE EL PROYECTO -->
+
+            <div class="tarjeta">
+
+                <h2>Nuestro proyecto</h2>
+
+                <p>
+
+                    Esta página fue desarrollada utilizando
+                    <b>HTML5 y CSS</b>, aplicando diferentes
+                    elementos de diseño y navegación para
+                    crear un sitio web sencillo, moderno
+                    y fácil de utilizar.
+
+                </p>
+
+            </div>
+
+
+            <!-- OBJETIVO -->
+
+            <div class="tarjeta">
+
+                <h2>Objetivo</h2>
+
+                <p>
+
+                    Nuestro objetivo es presentar de una manera
+                    organizada y visual la información de los
+                    integrantes del equipo, demostrando también
+                    parte de los conocimientos adquiridos durante
+                    nuestra formación.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <p class="mensaje">
+
+            ¡Explora el menú y conoce un poco más sobre cada uno de nosotros!
+
+        </p>
+
+
+    </main>
+
+
 </body>
+
 </html>
+```
